@@ -1,0 +1,75 @@
+[global_config]
+  inactive_color_offset = 0.88
+  title_transmit_bg_color = "#665d5d"
+[keybindings]
+  copy = <Alt>c
+  go_next = <Primary><Shift>n
+  next_profile = <Primary>slash
+  next_tab = <Primary>apostrophe
+  paste = <Primary>v
+  prev_tab = <Primary>semicolon
+  split_horiz = <Primary><Shift>e
+  split_vert = <Primary><Shift>o
+  zoom_in = <Super>equal
+  zoom_out = <Super>minus
+[layouts]
+  [[default]]
+    [[[child1]]]
+      parent = window0
+      profile = default
+      type = Terminal
+    [[[window0]]]
+      parent = ""
+      type = Window
+[plugins]
+[profiles]
+  [[default]]
+    background_color = "#300a24"
+    background_image = None
+    font = Monaco 10
+    foreground_color = "#ffffff"
+    palette = "#2e3436:#fba286:#00ccc7:#e3be1c:#3465a4:#75507b:#069a23:#eeeeec:#eeeeec:#f7bebc:#34e2e2:#fce94f:#729fcf:#ad7fa8:#34e246:#eeeeec"
+    scrollback_infinite = True
+    use_system_font = False
+  [[Argonaut]]
+    background_color = "#0e1019"
+    background_image = None
+    cursor_color = "#ff0018"
+    foreground_color = "#fffaf4"
+    palette = "#232323:#ff000f:#8ce10b:#ffb900:#008df8:#6d43a6:#00d8eb:#ffffff:#444444:#ff2740:#abe15b:#ffd242:#0092ff:#9a5feb:#67fff0:#ffffff"
+  [[Material]]
+    background_color = "#eaeaea"
+    background_image = None
+    cursor_color = "#16afca"
+    font = Monaco 10
+    foreground_color = "#232322"
+    palette = "#212121:#b7141f:#457b24:#f6981e:#134eb2:#560088:#0e717c:#efefef:#424242:#e83b3f:#7aba3a:#ffea2e:#54a4f3:#aa4dbc:#26bbd1:#d9d9d9"
+    use_system_font = False
+  [[MaterialDark]]
+    background_color = "#232322"
+    background_image = None
+    cursor_color = "#16afca"
+    font = Monaco 10
+    foreground_color = "#e5e5e5"
+    palette = "#212121:#b7141f:#457b24:#f6981e:#134eb2:#560088:#0e717c:#efefef:#424242:#e83b3f:#7aba3a:#ffea2e:#54a4f3:#aa4dbc:#26bbd1:#d9d9d9"
+    use_system_font = False
+  [[OneHalfDark]]
+    background_color = "#282c34"
+    background_image = None
+    cursor_color = "#a3b3cc"
+    foreground_color = "#dcdfe4"
+    palette = "#282c34:#e06c75:#98c379:#e5c07b:#61afef:#c678dd:#56b6c2:#dcdfe4:#282c34:#e06c75:#98c379:#e5c07b:#61afef:#c678dd:#56b6c2:#dcdfe4"
+  [[Seafoam Pastel]]
+    background_color = "#243434"
+    background_image = None
+    cursor_color = "#57646a"
+    foreground_color = "#d3e6d3"
+    palette = "#757574:#824d3d:#727c61:#ada15d:#3d6b81:#7a7266:#729493:#d3d7cf:#555753:#ef2929:#8ae234:#fce94f:#729fcf:#ad7fa8:#34e2e2:#eeeeec"
+  [[alias0]]
+    background_image = None
+    custom_command = site=0 bash
+    use_custom_command = True
+  [[alias1]]
+    background_image = None
+    custom_command = client=1 bash
+    use_custom_command = True
