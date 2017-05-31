@@ -40,9 +40,9 @@ function parse_git_branch {
 function prompt_func() {
 previous_return_value=$?;
 if [[ -z "$SSH_CLIENT" ]]; then
-prompt="${TITLEBAR}${GREEN}[${GREEN}\w${RED}$(parse_git_branch)${GREEN}]${COLOR_NONE}"
+prompt="${TITLEBAR}${GREEN}[${GREEN}\w${LIGHT_GRAY}$(parse_git_branch)${GREEN}]${COLOR_NONE}"
 else
-prompt="${TITLEBAR}${YELLOW}[${YELLOW}\w${RED}$(parse_git_branch)${YELLOW}]${COLOR_NONE}"
+prompt="${TITLEBAR}${YELLOW}[${YELLOW}\w${LIGHT_GRAY}$(parse_git_branch)${YELLOW}]${COLOR_NONE}"
 fi
 if test $previous_return_value -eq 0
 then

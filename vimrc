@@ -1,8 +1,11 @@
 set nocompatible " Fuck VI... That's for grandpas.
 filetype off
 
-set rtp+=~/.vim/bundle/vundle
+set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#rc()
+
+" let Vundle manage Vundle, required
+Plugin 'VundleVim/Vundle.vim'
 
 " Indentation guides
 set ts=1 sw=1 et
@@ -66,6 +69,9 @@ Plugin 'groenewege/vim-less'
 Plugin 'tpope/vim-rbenv'
 Plugin 'tpope/vim-rails'
 Plugin 'tpope/vim-endwise'
+
+call vundle#end()            " required
+filetype plugin indent on    " required
 
 "Mouse scroll
 set ttymouse=xterm2
