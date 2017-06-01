@@ -3,13 +3,16 @@ export PATH=/usr/local/bin:$PATH
 # if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 source $HOME/.bash_prompt
 
+export VISUAL=vim
+export EDITOR="$VISUAL"
+
 set -o vi
 alias bashupdate="source ~/.bash_profile"
 alias v="vi"
 alias c="clear"
 alias e="exit"
 alias u="cd ../"
-alias rs="~/Voicethread/rsyncscript"
+alias rs="rsync -avOz --exclude=.git/ --exclude=include/vendor --filter=':- .gitignore' /home/adina/Voicethread/site dev-frontend290.voicethread.net:/opt/site"
 alias r="rails"
 alias bprof="v ~/.bash_profile"
 alias vprof="v ~/.vimrc"
@@ -31,6 +34,7 @@ alias client="cd ~/Voicethread/clients"
 alias src="cd ~/Voicethread/clients/browser/src/web"
 alias atomhi="atom --force-device-scale-factor=1"
 alias dev="ssh dev-frontend290.voicethread.net"
+alias copy="xclip -selection c"
 
 function cs() {
     cd "$@" && ls
