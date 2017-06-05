@@ -1,6 +1,10 @@
 set nocompatible " Fuck VI... That's for grandpas.
 filetype off
 
+set shell=/bin/bash\ -i
+
+let $BASH_ENV = "~/.bash_profile"
+
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#rc()
 
