@@ -25,19 +25,18 @@ alias gs="git status"
 alias ss="spring stop"
 alias gcm="git commit -m"
 alias startvpn="sudo openvpn --config ~/.vpn/client.ovpn"
-alias festi="cd ~/Rails/festilite"
-alias famtog="cd ~/Rails/families-together"
-alias site="cd ~/Voicethread/site"
-alias system="cd ~/Voicethread/system"
-alias client="cd ~/Voicethread/clients"
 alias atomhi="atom --force-device-scale-factor=1"
 alias copy="xclip -selection c"
+alias os="cd /opt/site"
+alias log="vi /debug/errors.log"
+alias clog="> /debug/errors.log"
 
 function cs() {
     cd "$@" && ls
 }
 
 set completion-ignore-case On
+
 
 export PATH
 
