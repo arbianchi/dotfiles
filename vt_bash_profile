@@ -1,0 +1,37 @@
+export PATH=/usr/local/bin:$PATH
+export PATH=~/.local/bin:$PATH
+
+source $HOME/.bash_prompt
+
+export VISUAL=vim
+export EDITOR="$VISUAL"
+
+set editing-mode vi
+set -o vi
+
+alias bashupdate="source ~/.bash_profile"
+alias v="vi"
+alias c="clear"
+alias e="exit"
+alias u="cd ../"
+alias bprof="v ~/.bash_profile"
+alias vprof="v ~/.vimrc"
+alias l="ls"
+alias ga="git add -A"
+alias gc="git checkout"
+alias gpom="git pull origin master"
+alias gb="git branch"
+alias gs="git status"
+alias gcm="git commit -m"
+alias copy="xclip -selection c"
+alias topcpu="ps -eo pcpu,pid,user,args | sort -k1 -r | head -10"
+alias stash="git add -A && git stash"
+alias log="vi /debug/errors.log"
+alias clog="> /debug/errors.log"
+
+
+function cs() {
+    cd "$@" && ls
+}
+
+export PATH
