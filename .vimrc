@@ -4,25 +4,26 @@ filetype off
 set shell=/bin/bash\ -i
 
 let $BASH_ENV = "~/.bash_profile"
-
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#rc()
-
-" let Vundle manage Vundle, required
-Plugin 'VundleVim/Vundle.vim'
-
 " Indentation guides
 set ts=1 sw=1 et
 let g:indent_guides_guide_size=2
 
+
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+" let Vundle manage Vundle, required
+" Plugin 'VundleVim/Vundle.vim'
+
 " Let vundle manage itself:
-Plugin 'gmarik/vundle'
+Plugin 'VundleVim/vundle'
 
 " Just a shitload of color schemes.
 " https://github.com/flazz/vim-colorschemes#current-colorschemes
 Plugin 'flazz/vim-colorschemes'
 let g:solarized_termcolors=256
 Plugin 'altercation/vim-colors-solarized'
+Plugin 'vim-airline/vim-airline'
 
 " colorscheme zenburn 
 hi LineNR ctermfg=9
@@ -41,6 +42,8 @@ Plugin 'kien/ctrlp.vim'
 
 " Support for easily toggling comments.
 Plugin 'tpope/vim-commentary'
+
+Plugin 'maksimr/vim-jsbeautify'
 
 " SYNTAX
 Plugin 'jiangmiao/auto-pairs'
